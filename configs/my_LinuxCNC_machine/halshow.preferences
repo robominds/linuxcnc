@@ -1,0 +1,58 @@
+# Halshow settings
+# This file is generated automatically.
+wm geometry . 1007x1220+1418+71
+placeFrames 0.3
+set ::ratio 0.3
+set ::old_w_leftf 160
+set ::watchlist {
+    sig+y-is-homed
+    sig+z-is-homed
+    sig+x-is-homed
+    param+hm2_5i25.0.stepgen.00.dirsetup
+    param+hm2_5i25.0.stepgen.00.direction.invert_output
+    pin+hm2_5i25.0.gpio.001.in
+    pin+hm2_5i25.0.gpio.003.in
+    pin+hm2_5i25.0.gpio.005.in
+    pin+hm2_5i25.0.gpio.005.in_not
+    pin+hm2_5i25.0.gpio.003.in_not
+    pin+hm2_5i25.0.gpio.001.in_not
+    sig+x-pos-cmd
+    sig+joint-select-a
+    sig+jog-x-pos
+    pin+axis.x.jog-enable
+    pin+axis.x.jog-counts
+    pin+axis.x.jog-scale
+    pin+axis.x.jog-vel-mode
+    pin+axis.x.wheel-jog-active
+    pin+axis.y.jog-enable
+    pin+hm2_5i25.0.7i76.0.0.enc0.count
+    pin+hm2_5i25.0.7i76.0.0.enc0.rawcounts
+    pin+hm2_5i25.0.7i76.0.0.enc0.position
+    pin+hm2_5i25.0.7i76.0.0.enc0.reset
+    pin+hm2_5i25.0.7i76.0.0.analogin1
+    pin+hm2_5i25.0.7i76.0.0.analogin2
+    pin+hm2_5i25.0.7i76.0.0.analogin0
+    pin+jogincr.out-f
+    sig+selected-jog-incr
+    param+traj.vel_out
+    sig+max-x
+    sig+min-home-x
+    sig+min-z
+    sig+max-home-z
+    sig+x-output
+    sig+axis-select-y
+    sig+axis-select-x
+    sig+axis-select-z
+    sig+joint-select-b
+    sig+joint-select-c
+    sig+joint-select-d
+    sig+min-home-y
+    sig+max-y
+}
+set ::workmode watchhal
+set ::watchInterval 100
+set ::col1_width 100
+set ::ffmts 
+set ::ifmts 
+set ::alwaysOnTop 0
+set ::autoSaveWatchlist 1
