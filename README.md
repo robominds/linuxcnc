@@ -64,3 +64,5 @@
 |Function|Mesa 7i7u Pin Name|Mesa 7i76u Pin|
 |:-----|:-----|:-----|
 |E-Stop|Input14|TB6:15|
+
+![Internal MPG DB25 Pinout](https://github.com/robominds/linuxcnc/blob/cef37ab60e2effe825a4e657c1aadf4b89c3387f/images/Juxinice%20DB25%20Cable%20pinout.png)
