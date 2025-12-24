@@ -29,17 +29,23 @@ addf hm2_5i25.0.write         servo-thread
 # external input signals
 
 
-# --- JOINT-SELECT-A ---
-net joint-select-a     <=  hm2_5i25.0.7i76.0.0.input-04
+# --- JOINT-SELECT-X ---
+net joint-select-x     <=  hm2_5i25.0.7i76.0.0.input-07
 
-# --- JOINT-SELECT-B ---
-net joint-select-b     <=  hm2_5i25.0.7i76.0.0.input-05
+# --- JOINT-SELECT-Y ---
+net joint-select-y     <=  hm2_5i25.0.7i76.0.0.input-08
 
-# --- JOINT-SELECT-C ---
-net joint-select-c     <=  hm2_5i25.0.7i76.0.0.input-06
+# --- JOINT-SELECT-Z ---
+net joint-select-z     <=  hm2_5i25.0.7i76.0.0.input-09
 
-# --- JOINT-SELECT-D ---
-net joint-select-d     <=  hm2_5i25.0.7i76.0.0.input-07
+# --- JOINT-SELECT-4 ---
+net joint-select-4     <=  hm2_5i25.0.7i76.0.0.input-04
+
+# --- JOINT-SELECT-5 ---
+net joint-select-5     <=  hm2_5i25.0.7i76.0.0.input-05
+
+# --- JOINT-SELECT-6 ---
+net joint-select-6     <=  hm2_5i25.0.7i76.0.0.input-06
 
 # --- JOG-INCR-A ---
 net jog-incr-a     <=  hm2_5i25.0.7i76.0.0.input-10
@@ -280,21 +286,21 @@ net axis-selected-count     <=  hm2_5i25.0.7i76.0.0.enc0.count
 setp    axis.x.jog-vel-mode 0
 net selected-jog-incr    =>  axis.x.jog-scale
 #net axis-select-x       =>  axis.x.jog-enable
-net joint-select-a       =>  axis.x.jog-enable
+net joint-select-x       =>  axis.x.jog-enable
 net axis-selected-count =>  axis.x.jog-counts
 
 #       for axis y MPG
 setp    axis.y.jog-vel-mode 0
 net selected-jog-incr    =>  axis.y.jog-scale
 #net axis-select-y       =>  axis.y.jog-enable
-net joint-select-b       =>  axis.y.jog-enable
+net joint-select-y       =>  axis.y.jog-enable
 net axis-selected-count =>  axis.y.jog-counts
 
 #       for axis z MPG
 setp    axis.z.jog-vel-mode 0
 net selected-jog-incr    =>  axis.z.jog-scale
 #net axis-select-z       =>  axis.z.jog-enable
-net joint-select-c       =>  axis.z.jog-enable
+net joint-select-z       =>  axis.z.jog-enable
 net axis-selected-count =>  axis.z.jog-counts
 
 
